@@ -1,0 +1,26 @@
+h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: blue;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  margin: 5px;
+  width: 20vw;
+
+  &--active {
+    background-color: orange;
+  }
+
+  &__item {
+    padding: 20px;
+
+    width: 100%;
+    text-align: center;
+  }
+}

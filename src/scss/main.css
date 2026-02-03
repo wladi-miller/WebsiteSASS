@@ -1,0 +1,1 @@
+h1{display:flex;align-items:center;justify-content:center;color:blue}.layout{display:flex;flex-direction:column;align-items:center;padding:10px;margin:5px;width:20vw}.layout--active{background-color:orange}.layout__item{padding:20px;width:100%;text-align:center}
