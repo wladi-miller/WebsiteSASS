@@ -1,8 +1,22 @@
 @use "variablen" as *;
-
-.title {
+@mixin position {
   justify-content: center;
   text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.title,
+.card {
+  display: flex;
+}
+
+.title {
+  @include position;
 
   &__item {
     position: relative;
@@ -10,11 +24,6 @@
     color: #000;
     border-bottom: 2px solid $bg-color;
   }
-}
-
-.title,
-.card {
-  display: flex;
 }
 
 .card {
@@ -63,5 +72,18 @@
   &__new {
     font-weight: 800;
     font-size: 1.1rem;
+  }
+}
+.button {
+  @include position;
+  margin-top: 30px;
+
+  &__item {
+    background-color: $bg-color;
+    width: 20vw;
+    height: 5vh;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
   }
 }
