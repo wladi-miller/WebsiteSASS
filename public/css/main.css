@@ -70,9 +70,11 @@ body {
   gap: 10px;
 }
 .price__old {
-  color: red;
   text-decoration: line-through;
   font-weight: 600;
+}
+.price__old--active {
+  color: red;
 }
 .price__new {
   font-weight: 800;

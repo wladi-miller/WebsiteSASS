@@ -75,9 +75,11 @@ body {
   gap: 10px;
 
   &__old {
-    color: red;
     text-decoration: line-through;
     font-weight: 600;
+    &--active {
+      color: red;
+    }
   }
 
   &__new {
