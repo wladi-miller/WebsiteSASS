@@ -11,7 +11,7 @@ body {
 }
 
 .title,
-.card {
+.product {
   display: flex;
 }
 
@@ -26,7 +26,7 @@ body {
   }
 }
 
-.card {
+.product {
   width: 270px;
   height: 350px;
   border: $border-box;
@@ -52,7 +52,6 @@ body {
     font-weight: 600;
 
     &--active {
-      /* padding: 0; */
       border: none;
       color: grey;
       @include text-discription;
@@ -65,14 +64,12 @@ body {
   }
 }
 .price {
-  margin-top: 10px;
-  margin-bottom: 0px;
+  margin: 10px 0 10px 0;
   display: flex;
   align-items: baseline;
   gap: 10px;
 
   &__item {
-    margin: 0;
     font-weight: 800;
     font-size: 1rem;
 

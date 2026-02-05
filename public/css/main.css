@@ -10,7 +10,7 @@ body {
 }
 
 .title,
-.card {
+.product {
   display: flex;
 }
 
@@ -25,7 +25,7 @@ body {
   border-bottom: 2px solid #ffc966;
 }
 
-.card {
+.product {
   width: 270px;
   height: 350px;
   border: 1px solid #9c9c9c;
@@ -33,14 +33,14 @@ body {
   flex-direction: column;
   background: #fff;
 }
-.card__top {
+.product__top {
   flex: 2;
   background-color: #ffc966;
   font-size: 24px;
   align-items: center;
   justify-content: center;
 }
-.card__bottom {
+.product__bottom {
   flex: 1;
   padding-left: 20px;
   padding-right: 20px;
@@ -49,8 +49,7 @@ body {
   font-family: Arial, sans-serif;
   font-weight: 600;
 }
-.card__bottom--active {
-  /* padding: 0; */
+.product__bottom--active {
   border: none;
   color: grey;
   font-family: "Google Sans Code", monospace;
@@ -58,20 +57,18 @@ body {
   font-style: normal;
   color: grey;
 }
-.card__top, .card__bottom {
+.product__top, .product__bottom {
   display: flex;
   flex-direction: column;
 }
 
 .price {
-  margin-top: 10px;
-  margin-bottom: 0px;
+  margin: 10px 0 10px 0;
   display: flex;
   align-items: baseline;
   gap: 10px;
 }
 .price__item {
-  margin: 0;
   font-weight: 800;
   font-size: 1rem;
 }
