@@ -1,8 +1,4 @@
 @use "variablen" as *;
-@mixin position {
-  justify-content: center;
-  text-align: center;
-}
 
 body {
   background-color: rgb(1, 1, 66);
@@ -56,7 +52,7 @@ body {
     font-weight: 600;
 
     &--active {
-      padding: 0;
+      /* padding: 0; */
       border: none;
       color: grey;
       @include text-discription;
@@ -70,23 +66,25 @@ body {
 }
 .price {
   margin-top: 10px;
+  margin-bottom: 0px;
   display: flex;
   align-items: baseline;
   gap: 10px;
 
-  &__old {
-    text-decoration: line-through;
-    font-weight: 600;
-    &--active {
+  &__item {
+    margin: 0;
+    font-weight: 800;
+    font-size: 1rem;
+
+    &--old {
+      text-decoration: line-through;
+      font-size: 0.7rem;
+      font-weight: 600;
       color: red;
     }
   }
-
-  &__new {
-    font-weight: 800;
-    font-size: 1.1rem;
-  }
 }
+
 .button {
   @include position;
   margin-top: 30px;

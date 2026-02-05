@@ -50,7 +50,7 @@ body {
   font-weight: 600;
 }
 .card__bottom--active {
-  padding: 0;
+  /* padding: 0; */
   border: none;
   color: grey;
   font-family: "Google Sans Code", monospace;
@@ -65,20 +65,21 @@ body {
 
 .price {
   margin-top: 10px;
+  margin-bottom: 0px;
   display: flex;
   align-items: baseline;
   gap: 10px;
 }
-.price__old {
-  text-decoration: line-through;
-  font-weight: 600;
-}
-.price__old--active {
-  color: red;
-}
-.price__new {
+.price__item {
+  margin: 0;
   font-weight: 800;
-  font-size: 1.1rem;
+  font-size: 1rem;
+}
+.price__item--old {
+  text-decoration: line-through;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: red;
 }
 
 .button {
